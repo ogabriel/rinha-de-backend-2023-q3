@@ -1,4 +1,10 @@
 #!/usr/bin/env sh
 
-./install-gatling
-python stress-test/geracao_recursos.py
+if [ ! -d "deps/gatling" ]; then
+    echo "Installing gatling..."
+    ./install-gatling
+fi
+
+cd stress-test/
+python geracao_recursos.py
+cd ..
