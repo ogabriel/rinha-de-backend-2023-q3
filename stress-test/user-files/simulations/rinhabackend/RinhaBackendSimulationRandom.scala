@@ -6,7 +6,7 @@ import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 
 
-class RinhaBackendSimulation
+class RinhaBackendSimulationRandom
   extends Simulation {
 
   val httpProtocol = http
