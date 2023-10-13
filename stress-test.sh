@@ -11,7 +11,9 @@ sh $GATLING/gatling.sh -rm local -s RinhaBackendSimulation \
     -sf $RINHA/user-files/simulations \
     -rsf $RINHA/user-files/resources
 
-sleep 10
+sleep 5
 
-curl -v "http://localhost:9999/contagem-pessoas" >"$RESULTS_WORKSPACE/$finalista/contagem-pessoas.log"
-curl -v "http://localhost:9999/contagem-pessoas"
+COUNT=$(curl -s "http://localhost:9999/contagem-pessoas")
+
+echo "================================================================================"
+echo "A contagem de pessoas é: $COUNT"
