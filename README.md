@@ -21,3 +21,10 @@ Original: https://github.com/zanfranceschi/rinha-de-backend-2023-q3
 ```bash
 ./stress-test.sh
 ```
+
+## Minhas implementações
+
+- [Elixir](https://github.com/ogabriel/rinha-de-backend-elixir)
+- [Ruby](https://github.com/ogabriel/rinha-de-backend-ruby)
+- [Golang](https://github.com/ogabriel/rinha-de-backend-golang)
+- [PHP](https://github.com/ogabriel/rinha-de-backend-php)
